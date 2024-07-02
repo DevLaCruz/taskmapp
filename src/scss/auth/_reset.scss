@@ -1,0 +1,18 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.reset{
+    margin-top: 5rem;
+    .indivitapp{
+        @include m.degratedText(v.$azul);
+    }
+    input[type="submit"]{
+        @include m.boton(v.$azul, v.$blanco)
+    }
+
+    .acciones{
+        a{
+            color: v.$azul;
+        }
+    }
+}
